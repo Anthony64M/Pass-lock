@@ -52,3 +52,14 @@ def copy_credentials(site_name):
     """
     return Credentials.copy_credentials(site_name)
 
+def main():
+        print(' ')
+        print("Hello from Anthony, Welcome to Pass-Lock.")
+        while True:
+                print(' ')
+                print("-"*60)
+                print("Codes for navigation: \n ca-Create an Account \n li-Login \n ex-Exit")
+                short_code = input("Enter Choice: ").lower().strip()
+                if short_code == 'ex':
+                        break 
+
