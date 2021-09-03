@@ -91,4 +91,12 @@ class User:
                             user_credentials_list.append(credential)
             return user_credentials_list
 
-            
+        @classmethod
+        def copy_credentials(cls,site_name):
+            """
+            Copies a credential info after the credentials site_name has been entered.
+            """
+            find_credential = Credential.find_by_site_name(site_name)
+            return pyperclip.copy(find_credential.password)
+
+
