@@ -44,3 +44,27 @@ class User:
                     if (user.first_name == first_name and user.password == password):
                         current_user = user.first_name
             return current_user 
+        def __init__(self,user_name,site_name,account_name,password):
+            """
+            Defines the properties for each user will have.
+            """
+            # Instance variables
+            self.user_name = user_name
+            self.site_name = site_name
+            self.account_name = account_name
+            self.password = password
+        
+        def save_credentials(self):
+            """
+            Saves a newly created user instance.
+            """
+            # global user_list
+            Credential.credentials_list.append(self)
+
+        def generate_password(size=16, char=string.ascii.uppercase+string.ascii_lowercase+string.digits):
+            """
+            Generatea 16 character password for credentials.
+            """
+            gen_pass=''.join(random.choice(char) for _ in range(size))
+            return gen_pass
+            
