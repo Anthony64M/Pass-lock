@@ -137,10 +137,13 @@ def main():
                                                 print(' ')
                                         else:
                                                print("Sorry! Invalid Entry. Try again.")
-                                                
+                                else:
+                                    print(' ')
+                                    print("Sorry! Invalid option. Try again or Create an Account.")
+                else:
+                        print("-"*60)
+                        print(' ')
+                        print("Sorry! Invalid Entry. Try again.")
 
-
-
-
-
-					                
+if __name__ == '__main__':
+    main()
