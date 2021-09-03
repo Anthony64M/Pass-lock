@@ -20,4 +20,9 @@ def verify_user(first_name,password):
     '''
     checking_user = Credentials.check_user(first_name,password)
     return checking_user
-    
+def generate_password():
+    """
+    Function to generate password.
+    """    
+    gen_pass = Credential.generate_password()
+    return gen_pass
