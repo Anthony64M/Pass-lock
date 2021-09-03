@@ -80,3 +80,15 @@ class User:
                     if credentials.user_name == user_name:
                             user_credentials_list.append(credentials)
             return user_credentials_list
+
+        @classmethod
+        def find_by_site_name(cls,site_name):
+            """
+            TaKES IN A SITE_name and returns a credential that matches the site_name.
+            """
+            for credential in cls.credentials_list:
+                    if credential.site_name == site_name:
+                            user_credentials_list.append(credential)
+            return user_credentials_list
+
+            
