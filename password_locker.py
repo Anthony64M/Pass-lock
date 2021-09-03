@@ -45,4 +45,10 @@ def display_credential(user_name):
     Function to display credential information saved by user.
     """
     return Credentials.display_credential(user_name)
-    
+
+def copy_credentials(site_name):
+    """
+    Function to copy credential information  to clipboard.
+    """
+    return Credentials.copy_credentials(site_name)
+
