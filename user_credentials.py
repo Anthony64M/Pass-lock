@@ -25,4 +25,22 @@ class User:
         '''
         User.users_list.append(self)
 
-        
+    class Credential:
+        """
+        The class creates account credentials, generate password and save them.
+        """
+
+        #  Class Variables
+        credentials_list = []
+        user_credentials_list = []
+        @classmethod
+        def check_user(cls,first_name,password):
+            """
+            A method that checks if a username and password inserted matches the entry in the user_list.
+            """
+
+            current_user = ''
+            for user in User.users_list:
+                    if (user.first_name == first_name and user.password == password):
+                        current_user = user.first_name
+            return current_user 
