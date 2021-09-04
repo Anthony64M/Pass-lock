@@ -1,5 +1,5 @@
 import pyperclip
-from user_credentials import User, Credentials
+from user_credentials import User, Credential
 
 def create_user(fname,lname,password):
     '''
@@ -18,39 +18,39 @@ def verify_user(first_name,password):
     '''
     This Function verifies existing user information before credentials are created
     '''
-    checking_user = Credentials.check_user(first_name,password)
+    checking_user = Credential.check_user(first_name,password)
     return checking_user
 def generate_password():
     """
     Function to generate password.
     """    
-    gen_pass = Credentials.generate_password()
+    gen_pass = Credential.generate_password()
     return gen_pass
 
 def create_credential(user_name,site_name,password):
      """
      Function to create new credential.
      """
-     new_credential=Credentials(user_name,site_name,account_name,password)
+     new_credential=Credential(user_name,site_name,account_name,password)
      return new_credential
 
 def save_credential(credential):
     """
     Function to save new credential information after creation.
     """
-    Credentials.save_credential(credential)
+    Credential.save_credential(credential)
 
 def display_credential(user_name):
     """
     Function to display credential information saved by user.
     """
-    return Credentials.display_credential(user_name)
+    return Credential.display_credential(user_name)
 
 def copy_credentials(site_name):
     """
     Function to copy credential information  to clipboard.
     """
-    return Credentials.copy_credentials(site_name)
+    return Credential.copy_credentials(site_name)
 
 def main():
         print(' ')
