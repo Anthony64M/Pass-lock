@@ -1,7 +1,17 @@
-import pyperclip
+# import pyperclip
 from user_credentials import User, Credential
 
-def create_user(fname,lname, password):
+def function():
+    	print("          _____                                 ___             ____         _____    ____  ___                ")
+	print("              |  _ \                                |  |           / __ \       /  ___|   |  | /  /     ")
+	print("              | |_) )  ____  ___   ___    ______    |  |          / |  | \     /  /       |  |/  /      ")
+	print("              |  __/  / _  |/ __  / __    |_____|   |  |         |  |  |  |   |  |        |     \         ")
+	print("              | |    / (_| |\__ \ \__ \             |  |_____     \ |__| /    \  \_____   |  |\  \              ")
+	print("              |_|    \_____| ___/  ___/             |________|     \____/      \_______|  |__| \__\                       ")
+function()
+
+
+def create_new_user(fname,lname, password):
     '''
     This Function creates a new user account
     '''
@@ -70,7 +80,7 @@ def main():
                          first_name = input('Enter your first name - ').strip()
                          last_name = input('Enter your last name - ').strip()
                          password = input('Enter your password - ').strip()
-                         save_user(create_user(first_name,last_name,password))
+                         save_user(create_new_user(first_name,last_name,password))
                          print(" ")
                          print(f'New Account Created for: {first_name} {last_name} using password: {password}')
                 elif short_code == 'li':
