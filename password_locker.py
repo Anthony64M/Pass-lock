@@ -1,7 +1,7 @@
 import pyperclip
 from user_credentials import User, Credential
 
-def create_user(fname,lname,password):
+def create_user(fname,lname, password):
     '''
     This Function creates a new user account
     '''
