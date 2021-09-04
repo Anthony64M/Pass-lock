@@ -37,7 +37,7 @@ As a user I would like:
 * In your terminal:
         
         $ git clone https://github.com/Anthony64M/Pass-Lock/
-        $ cd Password-Locker
+        $ cd Pass-Lock
 
 ## Running the Application
 * To run the application, in your terminal:
