@@ -61,7 +61,7 @@ class User:
             # global user_list
             Credential.credentials_list.append(self)
 
-        def generate_password(size=16, char=string.ascii.uppercase+string.ascii_lowercase+string.digits):
+        def generate_password(size=16, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
             """
             Generatea 16 character password for credentials.
             """
@@ -96,7 +96,7 @@ class User:
             """
             Copies a credential info after the credentials site_name has been entered.
             """
-            find_credential = Credential.find_by_site_name(site_name)
+            find_credentials = Credentials.find_by_site_name(site_name)
             return pyperclip.copy(find_credential.password)
 
 
