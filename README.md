@@ -36,8 +36,8 @@ As a user I would like:
 ### Cloning
 * In your terminal:
         
-        $ git clone https://github.com/Anthony64M/Pass-Lock/
-        $ cd Pass-Lock
+        $ git clone https://github.com/Anthony64M/Pass-lock/
+        $ cd Pass-lock
 
 ## Running the Application
 * To run the application, in your terminal:
